@@ -7,56 +7,6 @@ Geometric Library is a Python library designed to perform geometric calculations
 - Efficient algorithms for geometric computations.
 - Easy to integrate with other projects.
 
-## Функции библиотеки
-
-### `square(n)`
-Принимает число n, возвращает квадрат числа n.
-
-- **Параметры**:
-  - `n` (int или float): число для возведения в квадрат.
-  
-- **Возвращает**: 
-  - (int или float): квадрат числа n.
-
-- **Пример использования**:
-  ```python
-  result = square(4)  # Возвращает 16
-
-
-commit fa14753d730ee63ebb1aa631d4171521b5f427a0 (HEAD -> docs/feature, origin/docs/feature)
-Author: Darth Vader <iurmantaev@mail.ru>
-Date:   Fri Oct 11 21:18:13 2024 +0300
-
-    Добавлена документация к функциям
-
-commit b5b0fae727ca72c317c383b39c0af73d6adcd81c (origin/develop, develop)
-Author: Daniil.K <dlkay@yandex.ru>
-Date:   Tue Mar 30 18:02:23 2021 +0300
-
-    L-04: Update docs for calculate.py
-
-commit d76db2ac7f69cc920ae2e6f669fb0671a7fa7d71
-Author: Daniil.K <dlkay@yandex.ru>
-Date:   Tue Mar 30 17:57:42 2021 +0300
-
-    L-04: Add calculate.py
-
-commit 51c40ebfd0e0b65f52fe5e54740cbb038e492db3
-Author: smartiqa <info@smartiqa.ru>
-Date:   Fri Mar 26 14:52:26 2021 +0300
-
-:
-
-
-
-
-
-
-
-
-
-
-
 # How to use calculator:
 1. Run `python calculate.py`
 2. Enter the figure name. Available are Circle, Square.
@@ -76,4 +26,96 @@ Date:   Fri Mar 26 14:52:26 2021 +0300
 - Rectangle: `P = 2a + 2b`
 - Square: `P = 4a`
 - Triangle: `P = a + b + c`
+
+# Документация функций
+## Circle
+## Функция area(r)
+**Описание**: Вычисляет площадь круга с радиусом r.
+
+**Параметры**:
+- r (float): Радиус круга.
+
+**Возвращает**: Площадь круга.
+
+**Пример использования**:
+```python
+import math
+area(5)  # Возвращает 78.54
+```
+
+## Функция `perimeter(r)`
+Вычисляет периметр круга с радиусом `r`.
+
+- **Параметры**:  
+  - `r` (float): радиус круга.
+- **Возвращает**:  
+  - Периметр круга.
+
+**Пример использования**:
+```python
+import math
+perimeter(5)  # Возвращает 31.42
+```
+
+## Square
+## Функция area(a)
+Вычисляет площадь квадрата со стороной a.
+
+- **Параметры**:  
+  - a (float): длина стороны квадрата.
+- **Возвращает**:  
+  - Площадь квадрата.
+
+**Пример использования**:
+```python
+import math
+area(5)  # Возвращает 25.00
+```
+
+## Функция `perimeter(a)`
+Вычисляет периметр квадрата со стороной `a`.
+
+- **Параметры**:  
+  - `a` (float): длина стороны квадрата.
+- **Возвращает**:  
+  - Периметр квадрата.
+
+**Пример использования**:
+```python
+import math
+perimeter(5)  # Возвращает 20.00
+```
+
+## Triangle
+## Функция area(a, b, c)
+Вычисляет площадь треугольника по полупериметру со сторонами a, b и c.
+
+- **Параметры**:  
+  - a (float): первая сторона треугольника.
+  - b (float): вторая сторона треугольника.
+  - c (float): третья сторона треугольника.
+- **Возвращает**:  
+  - Площадь треугольника.
+
+**Пример использования**:
+```python
+import math
+area(5, 5, 5)  # Возвращает 7.50
+```
+
+## Функция `perimeter(a, b, c)`
+Вычисляет периметр треугольника со сторонами `a`, `b`, `c`.
+
+- **Параметры**:  
+  - `a` (float): первая сторона треугольника.
+  - `b` (float): вторая сторона треугольника.
+  - `c` (float): третья сторона треугольника.
+- **Возвращает**:  
+  - Периметр треугольника.
+
+**Пример использования**:
+```python
+import math
+perimeter(5)  # Возвращает 15.00
+```
 
