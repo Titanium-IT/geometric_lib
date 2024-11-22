@@ -1,6 +1,7 @@
 import pytest
 from calculate import calc
 
+
 # Тесты для корректных данных
 def test_calc_circle_area():
     # Arrange
@@ -14,6 +15,7 @@ def test_calc_circle_area():
     # Assert
     assert pytest.approx(result, 0.01) == 28.27  # Площадь круга с радиусом 3
 
+
 def test_calc_square_perimeter():
     # Arrange
     fig = "square"
@@ -26,6 +28,7 @@ def test_calc_square_perimeter():
     # Assert
     assert result == 16  # Периметр квадрата
 
+
 # Тесты для некорректных данных
 def test_calc_invalid_figure():
     # Arrange
@@ -37,6 +40,7 @@ def test_calc_invalid_figure():
     with pytest.raises(AssertionError, match="Unknown figure: triangle"):
         calc(fig, func, size)
 
+
 def test_calc_invalid_function():
     # Arrange
     fig = "circle"
@@ -46,6 +50,7 @@ def test_calc_invalid_function():
     # Act and Assert
     with pytest.raises(AssertionError, match="Unknown function: volume"):
         calc(fig, func, size)
+
 
 def test_calc_invalid_size_count():
     # Arrange
