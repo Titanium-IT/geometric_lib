@@ -39,10 +39,8 @@ jobs:
           export PYTHONPATH=$PYTHONPATH:.
           pytest --maxfail=1 --disable-warnings -q
 
-      - name: Check code style with pylint
-        run: |
-          pip install flake8
-          flake8 .
+      - name: Check code style with black
+        run: black --check .
 
       - name: Format code with black (optional)
         run: |
