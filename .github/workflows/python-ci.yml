@@ -40,7 +40,9 @@ jobs:
           pytest --maxfail=1 --disable-warnings -q
 
       - name: Check code style with pylint
-        run: pylint *.py tests/*.py
+        run: |
+          pip install flake8
+          flake8 .
 
       - name: Format code with black (optional)
         run: |
